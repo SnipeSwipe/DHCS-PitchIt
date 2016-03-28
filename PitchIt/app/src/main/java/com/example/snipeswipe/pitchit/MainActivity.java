@@ -2,16 +2,11 @@ package com.example.snipeswipe.pitchit;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
-import android.widget.ScrollView;
 import android.widget.TabHost;
 import android.widget.Toast;
 
@@ -20,12 +15,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.content_main);
 
         TabHost host = (TabHost) findViewById(R.id.tabHost);
         host.setup();
 
-        Intent intentAndroid = new Intent().setClass(this, Main2Activity.class);
+//        Intent intentAndroid = new Intent().setClass(this, Main2Activity.class);
         ImageView iv;
         ImageView iv2;
         ImageView iv3;
@@ -49,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         TabHost.TabSpec spec = host.newTabSpec("Tab One");
         spec.setContent(R.id.tab1);
         spec.setIndicator("", getResources().getDrawable(R.drawable.newsfeed_tab));
+        //spec.setIndicator("NewsFeed");
         host.addTab(spec);
 
         //Tab 2
