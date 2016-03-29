@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.snipeswipe.pitchit2.SearchPage">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="15dp"
+        android:textAlignment="viewStart"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/searchBar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Search" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scout"
+        android:id="@+id/scoutRB"
+        android:checked="false"
+        android:layout_below="@+id/searchBar"
+        android:layout_toLeftOf="@+id/findBT"
+        android:layout_toStartOf="@+id/findBT" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player"
+        android:id="@+id/playerRB"
+        android:checked="false"
+        android:layout_below="@+id/searchBar"
+        android:layout_toRightOf="@+id/findBT"
+        android:layout_toEndOf="@+id/findBT" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:id="@+id/maleCB"
+        android:checked="false"
+        android:layout_below="@+id/scoutRB"
+        android:layout_toLeftOf="@+id/findBT"
+        android:layout_toStartOf="@+id/findBT" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:id="@+id/FemaleCB"
+        android:checked="false"
+        android:layout_alignTop="@+id/maleCB"
+        android:layout_alignLeft="@+id/playerRB"
+        android:layout_alignStart="@+id/playerRB" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game"
+        android:id="@+id/sportsTV"
+        android:layout_alignTop="@+id/sportsSP"
+        android:layout_toLeftOf="@+id/findBT"
+        android:layout_toStartOf="@+id/findBT" />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sportsSP"
+        android:entries="@array/sports"
+        android:layout_below="@+id/FemaleCB"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/findBT"
+        android:layout_toEndOf="@+id/findBT" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:id="@+id/ageTV"
+        android:paddingTop="30px"
+        android:layout_alignBottom="@+id/ageSB"
+        android:layout_alignRight="@+id/sportsTV"
+        android:layout_alignEnd="@+id/sportsTV" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageSB"
+        android:max="40"
+        android:indeterminate="false"
+        android:progress="@integer/status_bar_notification_info_maxnum"
+        android:minHeight="6dip"
+        android:maxHeight="6dip"
+        android:minWidth="100dip"
+        android:layout_below="@+id/sportsSP"
+        android:layout_alignLeft="@+id/sportsSP"
+        android:layout_alignStart="@+id/sportsSP" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:id="@+id/ratingTV"
+        android:paddingTop="20px"
+        android:layout_below="@+id/ageTV"
+        android:layout_alignRight="@+id/sportsTV"
+        android:layout_alignEnd="@+id/sportsTV" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingSB"
+        android:max="5"
+        android:progress="@integer/status_bar_notification_info_maxnum"
+        android:indeterminate="false"
+        android:paddingBottom="10px"
+        android:paddingTop="10px"
+        android:minHeight="6dip"
+        android:maxHeight="6dip"
+        android:minWidth="100dip"
+        android:layout_alignTop="@+id/ratingTV"
+        android:layout_alignLeft="@+id/ageSB"
+        android:layout_alignStart="@+id/ageSB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:id="@+id/locationTV"
+        android:layout_below="@+id/ratingTV"
+        android:layout_alignRight="@+id/ageTV"
+        android:layout_alignEnd="@+id/ageTV" />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationSP"
+        android:entries="@array/locations"
+        android:layout_alignTop="@+id/locationTV"
+        android:layout_alignLeft="@+id/ratingSB"
+        android:layout_alignStart="@+id/ratingSB" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        android:id="@+id/findBT"
+        android:layout_below="@+id/locationSP"
+        android:layout_centerHorizontal="true"
+        android:onClick="searchStart"
+        />
+
+
+
+</RelativeLayout>

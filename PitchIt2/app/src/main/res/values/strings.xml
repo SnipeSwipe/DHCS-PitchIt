@@ -6,4 +6,27 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+    <string-array name="sports">
+        <item>TT</item>
+        <item>Football</item>
+        <item>Cricket</item>
+        <item>Hockey</item>
+        <item>Skating</item>
+        <item>Swimming</item>
+    </string-array>
+
+
+    <string-array name="locations">
+        <item>Delhi</item>
+        <item>Haryana</item>
+        <item>Rajasthan</item>
+        <item>Madhya Pradesh</item>
+        <item>Uttrakhand</item>
+        <item>Karnataka</item>
+    </string-array>
 </resources>
