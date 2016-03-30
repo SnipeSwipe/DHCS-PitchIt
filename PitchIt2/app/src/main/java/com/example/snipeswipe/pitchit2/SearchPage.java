@@ -136,7 +136,7 @@ public class SearchPage extends AppCompatActivity {
 
     public void searchStart(View view){
         Log.d("Test", "Test");
-        Intent intent = new Intent(SearchPage.this, Profile.class);
+        Intent intent = new Intent(SearchPage.this, SearchResults.class);
         startActivity(intent);
     }
 }

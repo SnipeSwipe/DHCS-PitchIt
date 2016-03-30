@@ -3,7 +3,6 @@ package com.example.snipeswipe.pitchit2;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TableRow;
@@ -17,7 +16,7 @@ public class MessageList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message_list);
 
-        ImageView iv1 = (ImageView)findViewById(R.id.image1);
+        ImageView iv1 = (ImageView)findViewById(R.id.image2);
         iv1.setImageResource(R.drawable.girl);
         ImageView iv2 = (ImageView)findViewById(R.id.image2);
         iv2.setImageResource(R.drawable.boy);

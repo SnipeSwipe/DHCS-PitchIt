@@ -54,10 +54,12 @@
         <activity android:name=".ProfileVideos" />
         <activity android:name=".NotificationSettings" />
         <activity android:name=".PrivacySettings" />
-        <activity android:name=".PasswordSettings"
+        <activity
+            android:name=".PasswordSettings"
             android:windowSoftInputMode="stateVisible" />
         <activity android:name=".HelpSettings" />
-        <activity android:name=".ReportSettings"></activity>
+        <activity android:name=".ReportSettings" />
+        <activity android:name=".EditProfileFinal"></activity>
     </application>
 
 </manifest>

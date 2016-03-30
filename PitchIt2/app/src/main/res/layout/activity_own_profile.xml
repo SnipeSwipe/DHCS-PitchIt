@@ -237,7 +237,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="17dp"
-                    android:text="Inter School Ranking: 34 \nFinished 3rd in Rama Tennis Tournament"
+                    android:text=" - Inter School Ranking: 34 \n - Finished 3rd in Rama Tennis\n   Tournament"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="5dp"
                     android:layout_below="@id/Achievements"
@@ -253,7 +253,7 @@
                 android:onClick="photoClick"
                 android:background="#efefef"
 
-                >
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -319,7 +319,7 @@
                 android:id="@+id/videos_row"
                 android:background="#efefef"
                 android:onClick="videoClick"
-                >
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"

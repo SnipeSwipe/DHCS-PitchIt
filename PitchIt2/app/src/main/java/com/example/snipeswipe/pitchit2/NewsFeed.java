@@ -9,8 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class NewsFeed extends AppCompatActivity {
+
+    TextView[] likes = new TextView[5];
+    String[] likeValue = new String[5];
+    ImageView[] likeButton = new ImageView[5];
 
 
     @Override
@@ -48,12 +54,6 @@ public class NewsFeed extends AppCompatActivity {
             if(j%2==1) {
                 iv.setImageResource(R.drawable.boy);
             }
-//            if(j==2) {
-//                iv.setImageResource(R.drawable.girl);
-//            }
-//            if(j==4) {
-//                iv.setImageResource(R.drawable.boy3);
-//            }
             else {
                 iv.setImageResource(R.drawable.boy2);
             }
@@ -65,6 +65,80 @@ public class NewsFeed extends AppCompatActivity {
 
         }
 
+        likes[0] = (TextView)findViewById(R.id.likeValue1);
+        likes[1] = (TextView)findViewById(R.id.likeValue2);
+        likes[2] = (TextView)findViewById(R.id.likeValue3);
+        likes[3] = (TextView)findViewById(R.id.likeValue4);
+        likes[4] = (TextView)findViewById(R.id.likeValue5);
+
+        likeButton[0] = (ImageView)findViewById(R.id.likeImage1);
+        likeButton[1] = (ImageView)findViewById(R.id.likeImage2);
+        likeButton[2] = (ImageView)findViewById(R.id.likeImage3);
+        likeButton[3] = (ImageView)findViewById(R.id.likeImage4);
+        likeButton[4] = (ImageView)findViewById(R.id.likeImage5);
+
+
+        likeButton[0].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                likeValue[0] = likes[0].getText().toString();
+
+                int x = Integer.parseInt(likeValue[0]);
+                x++;
+                likes[0].setText(String.valueOf(x));
+            }
+
+        });
+
+        likeButton[1].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                likeValue[1] = likes[1].getText().toString();
+
+                int x = Integer.parseInt(likeValue[1]);
+                x++;
+                likes[1].setText(String.valueOf(x));
+            }
+
+        });
+        likeButton[2].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                likeValue[2] = likes[2].getText().toString();
+
+                int x = Integer.parseInt(likeValue[2]);
+                x++;
+                likes[2].setText(String.valueOf(x));
+            }
+
+        });
+        likeButton[3].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                likeValue[3] = likes[3].getText().toString();
+
+                int x = Integer.parseInt(likeValue[3]);
+                x++;
+                likes[3].setText(String.valueOf(x));
+            }
+
+        });
+        likeButton[4].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                likeValue[4] = likes[4].getText().toString();
+
+                int x = Integer.parseInt(likeValue[4]);
+                x++;
+                likes[4].setText(String.valueOf(x));
+            }
+
+        });
 
     }
 
@@ -74,9 +148,12 @@ public class NewsFeed extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void addPhoto(View view){
-        Log.d("Test", "Test");
+    public void photStart(View view){
         Intent intent = new Intent(NewsFeed.this, AddPhoto.class);
         startActivity(intent);
+    }
+
+    public void rowClick(View v){
+        Toast.makeText(NewsFeed.this, "Click Not Implemented", Toast.LENGTH_SHORT).show();
     }
 }

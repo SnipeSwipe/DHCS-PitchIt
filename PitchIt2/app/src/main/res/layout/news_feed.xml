@@ -49,19 +49,18 @@
                     android:layout_weight="1"
                     android:background="@drawable/round_button"
                     android:layout_marginRight="15dp"
-                    />
+                    android:onClick="rowClick" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Add a photo"
-                    android:onClick="addPhoto"
                     android:textSize="10dp"
                     android:id="@+id/add_photo"
                     android:layout_weight="1"
                     android:background="@drawable/round_button"
 
-                    />
+                    android:onClick="photStart" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -74,7 +73,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="5dp"
 
-                    />
+                    android:onClick="rowClick" />
             </TableRow>
 
 
@@ -130,18 +129,26 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@id/detailsText1"
                     android:paddingLeft="10dp"
-                    android:paddingBottom="1dp"
+                    android:paddingRight="10dp"
                     android:clickable="true"
-                    android:onClick="clickNew"
+                    android:onClick="onClick"
                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/likeImage1"
+                    android:layout_below="@id/detailsText1"
+                    android:id="@+id/likeValue1"
+                    android:text="40"/>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:id="@+id/commentImage1"
                     android:layout_alignParentBottom="true"
-                    android:layout_toLeftOf="@+id/nameText1"
-                    android:layout_toStartOf="@+id/nameText1" />
+                    android:layout_alignLeft="@+id/nameText1"
+                    android:layout_alignStart="@+id/nameText1" />
 
             </RelativeLayout>
 
@@ -200,16 +207,25 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@id/detailsText2"
                     android:paddingLeft="10dp"
-                    android:paddingBottom="1dp"
-                    />
+                    android:paddingRight="10dp"
+                    android:clickable="true"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/likeImage2"
+                    android:layout_below="@id/detailsText2"
+                    android:id="@+id/likeValue2"
+                    android:text="22"/>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:id="@+id/commentImage2"
-                    android:layout_alignParentBottom="true"
-                    android:layout_toLeftOf="@+id/nameText2"
-                    android:layout_toStartOf="@+id/nameText2" />
+                    android:layout_below="@+id/detailsText2"
+                    android:layout_alignLeft="@+id/nameText2"
+                    android:layout_alignStart="@+id/nameText2" />
 
             </RelativeLayout>
 
@@ -268,16 +284,26 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@id/detailsText3"
                     android:paddingLeft="10dp"
-                    android:paddingBottom="1dp"
-                    />
+                    android:paddingRight="10dp"
+                    android:clickable="true"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/likeImage3"
+                    android:layout_below="@id/detailsText3"
+                    android:id="@+id/likeValue3"
+                    android:text="7"/>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:id="@+id/commentImage3"
                     android:layout_alignParentBottom="true"
-                    android:layout_toLeftOf="@+id/nameText3"
-                    android:layout_toStartOf="@+id/nameText3" />
+                    android:layout_alignLeft="@+id/nameText3"
+                    android:layout_alignStart="@+id/nameText3"
+                     />
 
             </RelativeLayout>
 
@@ -336,15 +362,25 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@id/detailsText4"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp" />
+                    android:paddingRight="10dp"
+                    android:clickable="true"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/likeImage4"
+                    android:layout_below="@id/detailsText4"
+                    android:id="@+id/likeValue4"
+                    android:text="189"/>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:id="@+id/commentImage4"
                     android:layout_alignParentBottom="true"
-                    android:layout_toLeftOf="@+id/nameText4"
-                    android:layout_toStartOf="@+id/nameText4" />
+                    android:layout_alignLeft="@+id/nameText4"
+                    android:layout_alignStart="@+id/nameText4" />
 
             </RelativeLayout>
 
@@ -403,16 +439,25 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@id/detailsText5"
                     android:paddingLeft="10dp"
-                    android:paddingBottom="1dp"
-                    />
+                    android:paddingRight="10dp"
+                    android:clickable="true"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/likeImage5"
+                    android:layout_below="@id/detailsText5"
+                    android:id="@+id/likeValue5"
+                    android:text="6"/>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:id="@+id/commentImage5"
                     android:layout_alignParentBottom="true"
-                    android:layout_toLeftOf="@+id/nameText5"
-                    android:layout_toStartOf="@+id/nameText5" />
+                    android:layout_alignLeft="@+id/nameText5"
+                    android:layout_alignStart="@+id/nameText5" />
 
             </RelativeLayout>
 

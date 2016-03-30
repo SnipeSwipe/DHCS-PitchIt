@@ -17,7 +17,7 @@ public class Notifications extends AppCompatActivity {
         ImageView iv2;
         ImageView iv3;
 
-        iv = (ImageView) findViewById(R.id.image1);
+        iv = (ImageView) findViewById(R.id.image2);
         iv.setImageResource(R.drawable.giroud7);
 
         iv2 = (ImageView) findViewById(R.id.image2);
