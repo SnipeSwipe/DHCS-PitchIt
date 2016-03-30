@@ -18,10 +18,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:paddingBottom="@dimen/activity_vertical_margin"
+
             >
 
             <LinearLayout
@@ -38,6 +35,7 @@
                     android:layout_column="0"
                     android:baselineAligned="false"
                     android:background="#efefef"
+                    android:layout_margin="10dp"
                     >
 
                     <RelativeLayout
@@ -68,7 +66,7 @@
                             android:layout_height="match_parent"
                             android:layout_below="@id/name1"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:text="Ram Kishan Tiwari (scout) rated you. Click here to view his profile."
+                            android:text="Ram Kishan Tiwari (Scout) rated you. Click here to view his profile."
                             android:layout_marginTop="5dp"
                             android:layout_marginLeft="95dp"
                             android:id="@+id/data1" />
@@ -85,6 +83,8 @@
                     android:layout_column="0"
                     android:baselineAligned="false"
                     android:background="#efefef"
+                    android:layout_margin="10dp"
+
                     >
 
                     <RelativeLayout
@@ -104,7 +104,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="Ram Kishan Tiwari rated you"
+                            android:text="Aniket Jain is now following you"
                             android:layout_marginTop="10dp"
                             android:layout_marginLeft="95dp"
                             android:id="@+id/name2"
@@ -115,7 +115,7 @@
                             android:layout_height="match_parent"
                             android:layout_below="@id/name2"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:text="Ram Kishan Tiwari (scout) rated you. Click here to view his profile."
+                            android:text="Aniket Jain (Player) will now get updates about you."
                             android:layout_marginTop="5dp"
                             android:layout_marginLeft="95dp"
                             android:id="@+id/data2" />
@@ -132,6 +132,8 @@
                     android:layout_column="0"
                     android:baselineAligned="false"
                     android:background="#efefef"
+                    android:layout_margin="10dp"
+
                     >
 
                     <RelativeLayout
@@ -151,7 +153,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="Ram Kishan Tiwari rated you"
+                            android:text="Palash Sen is now following you"
                             android:layout_marginTop="10dp"
                             android:layout_marginLeft="95dp"
                             android:id="@+id/name3"
@@ -162,7 +164,7 @@
                             android:layout_height="match_parent"
                             android:layout_below="@id/name3"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:text="Ram Kishan Tiwari (scout) rated you. Click here to view his profile."
+                            android:text="Palash Sen (Scout) will now get updates about you."
                             android:layout_marginTop="5dp"
                             android:layout_marginLeft="95dp"
                             android:id="@+id/data3" />

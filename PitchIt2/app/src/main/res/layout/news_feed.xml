@@ -54,7 +54,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Add an photo"
+                    android:text="Add a photo"
+                    android:onClick="addPhoto"
                     android:textSize="10dp"
                     android:id="@+id/add_photo"
                     android:layout_weight="1"
@@ -65,7 +66,7 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Add an Video"
+                    android:text="Add a Video"
                     android:textSize="10dp"
                     android:id="@+id/add_video"
                     android:layout_weight="1"
@@ -129,7 +130,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@id/detailsText1"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
+                    android:paddingBottom="1dp"
                     android:clickable="true"
                     android:onClick="clickNew"
                     />
@@ -199,7 +200,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@id/detailsText2"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp" />
+                    android:paddingBottom="1dp"
+                    />
 
                 <ImageView
                     android:layout_width="20dp"
@@ -266,7 +268,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@id/detailsText3"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp" />
+                    android:paddingBottom="1dp"
+                    />
 
                 <ImageView
                     android:layout_width="20dp"
@@ -400,7 +403,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@id/detailsText5"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp" />
+                    android:paddingBottom="1dp"
+                    />
 
                 <ImageView
                     android:layout_width="20dp"

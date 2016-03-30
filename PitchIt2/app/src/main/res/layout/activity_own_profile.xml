@@ -208,7 +208,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="rowClick"
-                android:id="@+id/achievements_row" >
+                android:id="@+id/achievements_row"
+                android:background="#efefef"
+                >
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -249,6 +251,8 @@
                 android:layout_weight="1"
                 android:id="@+id/photos_row"
                 android:onClick="photoClick"
+                android:background="#efefef"
+
                 >
 
                 <TextView
@@ -312,7 +316,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/videos_row">
+                android:id="@+id/videos_row"
+                android:background="#efefef"
+                android:onClick="videoClick"
+                >
 
                 <TextView
                     android:layout_width="wrap_content"

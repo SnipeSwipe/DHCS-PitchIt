@@ -1,5 +1,6 @@
 package com.example.snipeswipe.pitchit2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -35,5 +36,31 @@ public class Settings extends AppCompatActivity {
     public void rowClick(View v){
         Toast.makeText(Settings.this, "Test", Toast.LENGTH_SHORT).show();
     }
+
+    public void notiStart(View view){
+        Intent intent = new Intent(Settings.this, NotificationSettings.class);
+        startActivity(intent);
+    }
+
+    public void privStart(View view){
+        Intent intent = new Intent(Settings.this, PrivacySettings.class);
+        startActivity(intent);
+    }
+
+    public void passStart(View view){
+        Intent intent = new Intent(Settings.this, PasswordSettings.class);
+        startActivity(intent);
+    }
+
+    public void helpStart(View view){
+        Intent intent = new Intent(Settings.this, HelpSettings.class);
+        startActivity(intent);
+    }
+
+    public void repoStart(View view){
+        Intent intent = new Intent(Settings.this, ReportSettings.class);
+        startActivity(intent);
+    }
+
 
 }

@@ -24,7 +24,7 @@ public class MainActivity extends TabActivity  {
         // create tab
         TabSpec tabHome = createTab(tabHost, "tabHome", "Home", NewsFeed.class);
         TabSpec tabProfile = createTab(tabHost, "tabProfile", "Profile", OwnProfile.class);
-        TabSpec tabChat = createTab(tabHost, "tabChat", "Chat", ChatActivity.class);
+        TabSpec tabChat = createTab(tabHost, "tabChat", "Chat", MessageList.class);
         TabSpec tabNotifications = createTab(tabHost, "tabAbout", "Notifications", Notifications.class);
         TabSpec tabSettings = createTab(tabHost, "tabSettings", "Settings", Settings.class);
 

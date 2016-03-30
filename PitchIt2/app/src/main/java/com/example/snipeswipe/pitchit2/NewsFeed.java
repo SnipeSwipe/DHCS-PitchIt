@@ -74,5 +74,9 @@ public class NewsFeed extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void addPhoto(View view){
+        Log.d("Test", "Test");
+        Intent intent = new Intent(NewsFeed.this, AddPhoto.class);
+        startActivity(intent);
+    }
 }

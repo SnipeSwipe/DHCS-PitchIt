@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class OwnProfile extends AppCompatActivity {
 
@@ -63,6 +64,15 @@ public class OwnProfile extends AppCompatActivity {
     public void photoClick(View v){
         Intent intent = new Intent(OwnProfile.this, OwnProfilePhotos.class);
         startActivity(intent);
+    }
+
+    public void videoClick(View v){
+        Intent intent = new Intent(OwnProfile.this, OwnProfileVideos.class);
+        startActivity(intent);
+    }
+
+    public void rowClick(View view){
+        Toast.makeText(OwnProfile.this, "Feature Not Available", Toast.LENGTH_SHORT).show();
     }
 
 }

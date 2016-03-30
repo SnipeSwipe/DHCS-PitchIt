@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Push Notifications"
+        android:id="@+id/switch1"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.25"
+        android:checked="true"
+        android:layout_marginTop="83dp"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications from people you are following"
+        android:id="@+id/switch2"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/switch1"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:checked="true"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_alignRight="@+id/switch1"
+        android:layout_alignEnd="@+id/switch1" />
+</RelativeLayout>
