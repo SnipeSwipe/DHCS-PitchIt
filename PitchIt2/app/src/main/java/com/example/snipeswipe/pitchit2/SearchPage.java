@@ -1,16 +1,25 @@
 package com.example.snipeswipe.pitchit2;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.SeekBar;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toolbar;
+
+import java.util.logging.Handler;
+import java.util.logging.LogRecord;
 
 public class SearchPage extends AppCompatActivity {
 
@@ -36,6 +45,69 @@ public class SearchPage extends AppCompatActivity {
         locations.setAdapter(adapter_locations);
 
         Button findButton = (Button)findViewById(R.id.findBT);
+
+        final EditText editText = (EditText) findViewById(R.id.searchBar);
+        editText.requestFocus();
+
+
+        SeekBar seekBar = (SeekBar)findViewById(R.id.ageSB);
+        final TextView seekBarValueAge = (TextView)findViewById(R.id.ageTV);
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress,
+                                          boolean fromUser) {
+                // TODO Auto-generated method stub
+                seekBarValueAge.setText("Age (" + String.valueOf(progress) + ")");
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                // TODO Auto-generated method stub
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                // TODO Auto-generated method stub
+            }
+        });
+
+        SeekBar seekBarRating = (SeekBar)findViewById(R.id.ratingSB);
+        final TextView seekBarValueRating = (TextView)findViewById(R.id.ratingTV);
+
+        seekBarRating.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+            @Override
+            public void onProgressChanged(SeekBar seekBarRating, int progress,
+                                          boolean fromUser) {
+                // TODO Auto-generated method stub
+                seekBarValueRating.setText("Rating ("+String.valueOf(progress)+")");
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBarRating) {
+                // TODO Auto-generated method stub
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBarRating) {
+                // TODO Auto-generated method stub
+            }
+        });
+
+
+        Button searchButton =(Button) findViewById(R.id.findBT);
+
+
+        searchButton.setTextColor(Color.parseColor("#FFFFFF"));
+
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
 
 
     }

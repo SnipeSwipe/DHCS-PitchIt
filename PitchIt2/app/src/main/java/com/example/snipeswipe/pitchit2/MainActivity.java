@@ -8,6 +8,8 @@ import android.widget.TabHost.TabSpec;
 
 public class MainActivity extends TabActivity  {
 
+
+    int i=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +35,30 @@ public class MainActivity extends TabActivity  {
         tabHost.addTab(tabChat);
         tabHost.addTab(tabNotifications);
         tabHost.addTab(tabSettings);
+
+        for (int i = 0; i < tabHost.getTabWidget().getChildCount(); i++){
+            tabHost.getTabWidget().getChildAt(i).setPadding(0,0,10,0);
+        }
+
     }
 
     private TabSpec createTab(TabHost tabHost, String tag, String label, Class<?> intent) {
         TabSpec tab = tabHost.newTabSpec(tag);
-        tab.setIndicator(label);
+
+        if(i==0) {
+            tab.setIndicator("", getResources().getDrawable(R.drawable.icon_home));
+        }
+        if(i==1) {
+            tab.setIndicator("", getResources().getDrawable(R.drawable.icon_profile));
+        }if(i==2) {
+            tab.setIndicator("", getResources().getDrawable(R.drawable.icon_message));
+        }if(i==3) {
+            tab.setIndicator("", getResources().getDrawable(R.drawable.icon_notifications));
+        }if(i==4) {
+            tab.setIndicator("", getResources().getDrawable(R.drawable.icon_settings));
+        }
+
+        i++;
         tab.setContent(new Intent(this, intent));
 
         return tab;

@@ -39,7 +39,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Name"
+                        android:text="Kriti Sharan"
                         android:textStyle="bold"
                         android:layout_marginTop="5dp"
                         android:layout_centerHorizontal="true"
@@ -50,10 +50,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Sports"
-                        android:textStyle="bold"
+                        android:text="Tennis"
                         android:layout_below="@id/name"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="2dp"
                         android:layout_centerHorizontal="true"
                         android:id="@+id/sports"
                         />
@@ -65,7 +64,8 @@
                         android:layout_centerHorizontal="true"
                         android:layout_below="@id/profile_photo"
                         android:text="EDIT"
-                        android:id="@+id/Follow"
+                        android:id="@+id/editButton"
+                        android:background="@drawable/round_button"
                         android:onClick="searchStart"
                         />
 
@@ -73,8 +73,8 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_toRightOf="@id/name"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="10dp"
                         android:id="@+id/ribbon"
                         />
 
@@ -82,7 +82,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="17dp"
-                        android:text="31"
+                        android:text="19"
                         android:textStyle="bold"
                         android:layout_marginTop="40dp"
                         android:layout_marginLeft="35dp"
@@ -101,7 +101,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="17dp"
-                        android:text="6'0''"
+                        android:text="170"
                         android:textStyle="bold"
                         android:layout_below="@+id/Age"
                         android:layout_marginTop="10dp"
@@ -121,7 +121,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="17dp"
-                        android:text="79 kg"
+                        android:text="60 kg"
                         android:textStyle="bold"
                         android:layout_below="@+id/Height"
                         android:layout_marginTop="10dp"
@@ -235,8 +235,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="17dp"
-                    android:text="Hello how are you \nlalalalal"
-                    android:textStyle="bold"
+                    android:text="Inter School Ranking: 34 \nFinished 3rd in Rama Tennis Tournament"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="5dp"
                     android:layout_below="@id/Achievements"
@@ -248,7 +247,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/photos_row">
+                android:id="@+id/photos_row"
+                android:onClick="photoClick"
+                >
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -279,25 +280,25 @@
 
                     >
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:id="@+id/photo1" />
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:id="@+id/photo2" />
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:id="@+id/photo3" />
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -342,25 +343,25 @@
 
                     >
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:id="@+id/video1" />
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:id="@+id/video2" />
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:id="@+id/video3" />
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

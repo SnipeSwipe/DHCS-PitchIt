@@ -2,7 +2,9 @@ package com.example.snipeswipe.pitchit2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Settings extends AppCompatActivity {
 
@@ -29,4 +31,9 @@ public class Settings extends AppCompatActivity {
 
         }
     }
+
+    public void rowClick(View v){
+        Toast.makeText(Settings.this, "Test", Toast.LENGTH_SHORT).show();
+    }
+
 }
