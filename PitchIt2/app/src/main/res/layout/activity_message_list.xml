@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:onClick="addMessage"
+        android:src="@android:drawable/ic_input_add"
+        app:rippleColor="@color/black_overlay"
+        />
+
 <ScrollView
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Messages"
@@ -51,13 +69,11 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="Chapel"
-                        android:layout_marginTop="10dp"
                         android:id="@+id/name1"
                         android:textStyle="bold"
-                        android:layout_alignRight="@+id/textView2"
-                        android:layout_alignEnd="@+id/textView2"
-                        android:layout_toRightOf="@+id/image3"
-                        android:layout_toEndOf="@+id/image3" />
+                        android:layout_above="@+id/textView2"
+                        android:layout_alignLeft="@+id/data1"
+                        android:layout_alignStart="@+id/data1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -106,7 +122,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:padding="10dp"
-                        android:id="@+id/image2"
+                        android:id="@+id/image1"
                         />
 
                     <TextView
@@ -153,7 +169,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:padding="10dp"
-                        android:id="@+id/image2"
+                        android:id="@+id/image4"
                         />
 
                     <TextView
@@ -197,6 +213,53 @@
 
             </TableRow>
 
+            <TableRow
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee"
+                    android:onClick="runChat2"
+                    >
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:id="@+id/image2"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Olivier Giroud"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/name1"
+                        android:layout_alignLeft="@+id/data1"
+                        android:layout_alignStart="@+id/data1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Hey, what&apos;s up?"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="95dp"
+                        android:id="@+id/data1" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -206,3 +269,4 @@
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>

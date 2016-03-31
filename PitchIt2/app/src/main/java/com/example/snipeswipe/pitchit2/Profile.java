@@ -56,6 +56,12 @@ public class Profile extends AppCompatActivity {
         Toast.makeText(Profile.this, "Feature Not Available", Toast.LENGTH_SHORT).show();
     }
 
+    public void profClick(View view){
+//        Toast.makeText(Profile.this, "", Toast.LENGTH_SHORT).show();
+        Button button = (Button)findViewById(R.id.follow);
+        button.setText("Followed");
+    }
+
     public void photoClick(View view){
         Intent intent = new Intent(Profile.this, ProfilePhotos.class);
         startActivity(intent);
@@ -63,6 +69,11 @@ public class Profile extends AppCompatActivity {
 
     public void videoClick(View view){
         Intent intent = new Intent(Profile.this, ProfileVideos.class);
+        startActivity(intent);
+    }
+
+    public void chatStart(View view){
+        Intent intent = new Intent(Profile.this, ChatTestActivity2.class);
         startActivity(intent);
     }
 }
