@@ -21,7 +21,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:id="@+id/linearLayout3">
 
@@ -169,14 +169,14 @@
                 android:id="@+id/row1"
                 android:onClick="rowClick"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="match_parent"
                 android:layout_column="0"
                 android:baselineAligned="false">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:onClick="rowClick"
+                    android:layout_height="100dp"
+                    android:onClick="profStart2"
                     android:background="#efefef"
                     android:layout_marginTop="10dp">
 
@@ -205,7 +205,7 @@
                         android:layout_toRightOf="@id/name1"
                         android:layout_marginTop="8dp"
                         android:layout_marginLeft="60dp"
-                        android:id="@+id/ribbon1"
+                        android:id="@+id/ribbon2"
                         />
 
                     <TextView
@@ -306,8 +306,711 @@
 
             </TableRow>
 
+            <TableRow
+                android:id="@+id/row1"
+                android:onClick="rowClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:onClick="profStart3"
+                    android:background="#efefef"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/image3"
+                        android:layout_alignBottom="@+id/Location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Rupanjan"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="95dp"
+                        android:id="@+id/name1"
+                        />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/ribbon3"
+                        android:layout_alignTop="@+id/name1"
+                        android:layout_alignRight="@+id/age1"
+                        android:layout_alignEnd="@+id/age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@id/image3"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sport: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/Sport1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@+id/Sport1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="BasketBall"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/sport1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@+id/sport1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Age: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="45dp"
+                        android:id="@+id/Age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@id/Age1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="50"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@+id/image3"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Location: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/Location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@id/Location1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Delhi"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@id/location1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rating: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:id="@+id/Rating1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@+id/Rating1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/rating1"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row1"
+                android:onClick="rowClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:onClick="profStart4"
+                    android:background="#efefef"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/image4"
+                        android:layout_alignBottom="@+id/Location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Anurag Paliwal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="95dp"
+                        android:id="@+id/name1"
+                        />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/ribbon4"
+                        android:layout_alignTop="@+id/name1"
+                        android:layout_toRightOf="@+id/Age1"
+                        android:layout_toEndOf="@+id/Age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@id/image4"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sport: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/Sport1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@+id/Sport1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Football"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/sport1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@+id/sport1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Age: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="45dp"
+                        android:id="@+id/Age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@id/Age1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="21"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@+id/image4"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Location: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/Location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@id/Location1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Delhi"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@id/location1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rating: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:id="@+id/Rating1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@+id/Rating1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="3"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/rating1"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row1"
+                android:onClick="rowClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:onClick="profStart5"
+                    android:background="#efefef"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/image5"
+                        android:layout_alignBottom="@+id/Location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Anurag Kumar"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="95dp"
+                        android:id="@+id/name1"
+                        />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_toRightOf="@id/name1"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="60dp"
+                        android:id="@+id/ribbon5"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@id/image5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sport: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/Sport1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@+id/Sport1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Table Tennis"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/sport1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@+id/sport1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Age: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="45dp"
+                        android:id="@+id/Age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@id/Age1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="19"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@+id/image5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Location: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/Location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@id/Location1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Delhi"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@id/location1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rating: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:id="@+id/Rating1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@+id/Rating1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="3.1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/rating1"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row1"
+                android:onClick="rowClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:onClick="profStart6"
+                    android:background="#efefef"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/image6"
+                        android:layout_alignBottom="@+id/Location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Vishnu Rajendran"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="95dp"
+                        android:id="@+id/name1"
+                        />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/ribbon6"
+                        android:layout_above="@+id/age1"
+                        android:layout_toRightOf="@+id/age1"
+                        android:layout_toEndOf="@+id/age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@id/image6"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sport: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/Sport1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@+id/Sport1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Tennis"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/sport1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@+id/sport1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Age: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="45dp"
+                        android:id="@+id/Age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@id/Age1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="21"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@+id/image6"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Location: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/Location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@id/Location1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Delhi"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@id/location1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rating: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:id="@+id/Rating1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@+id/Rating1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="2.6"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/rating1"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row1"
+                android:onClick="rowClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:onClick="profStart7"
+                    android:background="#efefef"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/image7"
+                        android:layout_alignBottom="@+id/Location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Hari Shankar"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="95dp"
+                        android:id="@+id/name1"
+                        />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/ribbon7"
+                        android:layout_alignTop="@+id/name1"
+                        android:layout_toRightOf="@+id/age1"
+                        android:layout_toEndOf="@+id/age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@id/image7"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sport: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/Sport1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@+id/Sport1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Tennis"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/sport1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@+id/sport1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Age: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="45dp"
+                        android:id="@+id/Age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_toRightOf="@id/Age1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="17"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/age1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@+id/image7"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Location: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/Location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@id/Location1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Delhi"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/location1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@id/location1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rating: "
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:id="@+id/Rating1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Sport1"
+                        android:layout_toRightOf="@+id/Rating1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="2.6"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/rating1"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+
 
         </LinearLayout>
+
 
     </RelativeLayout>
 </ScrollView>

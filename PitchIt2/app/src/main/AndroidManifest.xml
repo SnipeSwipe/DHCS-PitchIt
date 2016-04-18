@@ -67,7 +67,15 @@
         <activity android:name=".ReportSettings" />
         <activity android:name=".EditProfileFinal" />
         <activity android:name=".ChatTestActivity" />
-        <activity android:name=".ChatTestActivity2"></activity>
+        <activity android:name=".ChatTestActivity2" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".AddAchievement" />
+        <activity android:name=".Profile2" />
+        <activity android:name=".Profile3" />
+        <activity android:name=".Profile4" />
+        <activity android:name=".Profile5" />
+        <activity android:name=".Profile6" />
+        <activity android:name=".Profile7"></activity>
     </application>
 
 </manifest>

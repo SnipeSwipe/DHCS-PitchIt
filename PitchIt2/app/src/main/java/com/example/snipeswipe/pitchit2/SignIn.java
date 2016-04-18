@@ -39,7 +39,7 @@ public class SignIn extends AppCompatActivity implements GoogleApiClient.Connect
     private GoogleApiClient mGoogleApiClient;
     String email;
     static String SEND_EMAIL = "MainActivity";
-
+    DatabaseHandler db = new DatabaseHandler(this);
 
     @Override
     public void onClick(View v)
@@ -110,7 +110,6 @@ public class SignIn extends AppCompatActivity implements GoogleApiClient.Connect
 
     @Override
     protected void onStop() {
-        Log.d(TAG, "STOPPING!");
         onSignOutClicked();
         super.onStop();
         mGoogleApiClient.disconnect();
@@ -118,6 +117,8 @@ public class SignIn extends AppCompatActivity implements GoogleApiClient.Connect
 
     @Override
     public void onConnected(Bundle bundle) {
+
+        db.addContact(new Users("Aman Agarwal", "20", "Male", "185", "76", "Football", "SPS", "Foosball", "agarwal_a@live.com", "9810869166"));
 
         Log.d(TAG, "onConnected:" + bundle);
         mShouldResolve = false;
@@ -192,4 +193,10 @@ public class SignIn extends AppCompatActivity implements GoogleApiClient.Connect
             Log.d(TAG, "Signed out");
         }
     }
+
+    public void startSignup(View view){
+        Intent intent = new Intent(SignIn.this, SignUp.class);
+        startActivity(intent);
+    }
+
 }

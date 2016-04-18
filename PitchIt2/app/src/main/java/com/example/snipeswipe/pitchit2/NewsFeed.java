@@ -14,9 +14,9 @@ import android.widget.Toast;
 
 public class NewsFeed extends AppCompatActivity {
 
-    TextView[] likes = new TextView[5];
-    String[] likeValue = new String[5];
-    ImageView[] likeButton = new ImageView[5];
+    TextView[] likes = new TextView[6];
+    String[] likeValue = new String[6];
+    ImageView[] likeButton = new ImageView[6];
 
 
     @Override
@@ -27,9 +27,10 @@ public class NewsFeed extends AppCompatActivity {
         Button ach =(Button) findViewById(R.id.add_achievement);
         Button pho =(Button) findViewById(R.id.add_photo);
         Button vid =(Button) findViewById(R.id.add_video);
+        Button nocli = (Button) findViewById(R.id.button2);
 
 
-
+        nocli.setTextColor(Color.parseColor("#FFFFFF"));
         ach.setTextColor(Color.parseColor("#FFFFFF"));
         pho.setTextColor(Color.parseColor("#FFFFFF"));
         vid.setTextColor(Color.parseColor("#FFFFFF"));
@@ -42,7 +43,7 @@ public class NewsFeed extends AppCompatActivity {
 
         int j=1;
 
-        for (int i=1;i<=5;i++) {
+        for (int i=1;i<=6;i++) {
             int ivd1 = getResources().getIdentifier("profilePhoto" + i, "id", "com.example.snipeswipe.pitchit2");
             int ivd2 = getResources().getIdentifier("likeImage" + i, "id", "com.example.snipeswipe.pitchit2");
             int ivd3 = getResources().getIdentifier("commentImage" + i, "id", "com.example.snipeswipe.pitchit2");
@@ -51,8 +52,15 @@ public class NewsFeed extends AppCompatActivity {
             iv2 = (ImageView) findViewById(ivd2);
             iv3 = (ImageView) findViewById(ivd3);
 
-            if(j%2==1) {
+            if(j==3){
+                iv.setImageResource(R.drawable.girl2);
+            }
+            else if(j%2==1) {
                 iv.setImageResource(R.drawable.boy);
+            }
+
+            else if (j==6){
+                iv.setImageResource(R.drawable.girl);
             }
             else {
                 iv.setImageResource(R.drawable.boy2);
@@ -70,12 +78,16 @@ public class NewsFeed extends AppCompatActivity {
         likes[2] = (TextView)findViewById(R.id.likeValue3);
         likes[3] = (TextView)findViewById(R.id.likeValue4);
         likes[4] = (TextView)findViewById(R.id.likeValue5);
+        likes[5] = (TextView)findViewById(R.id.likeValue6);
+
 
         likeButton[0] = (ImageView)findViewById(R.id.likeImage1);
         likeButton[1] = (ImageView)findViewById(R.id.likeImage2);
         likeButton[2] = (ImageView)findViewById(R.id.likeImage3);
         likeButton[3] = (ImageView)findViewById(R.id.likeImage4);
         likeButton[4] = (ImageView)findViewById(R.id.likeImage5);
+        likeButton[5] = (ImageView)findViewById(R.id.likeImage6);
+
 
 
         likeButton[0].setOnClickListener(new View.OnClickListener() {
@@ -140,6 +152,19 @@ public class NewsFeed extends AppCompatActivity {
 
         });
 
+        likeButton[5].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                likeValue[5] = likes[5].getText().toString();
+
+                int x = Integer.parseInt(likeValue[5]);
+                x++;
+                likes[5].setText(String.valueOf(x));
+            }
+
+        });
+
     }
 
     public void searchStart(View view){
@@ -154,6 +179,11 @@ public class NewsFeed extends AppCompatActivity {
     }
 
     public void rowClick(View v){
-        Toast.makeText(NewsFeed.this, "Click Not Implemented", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(NewsFeed.this, AddAchievement.class);
+        startActivity(intent);
+    }
+
+    public void noClick(View v){
+        Toast.makeText(NewsFeed.this, "Feature Withdrawn", Toast.LENGTH_SHORT).show();
     }
 }
