@@ -100,6 +100,17 @@ public class ChatTestActivity5 extends AppCompatActivity {
         chatHistory = new ArrayList<ChatMessage>();
 
         ChatMessage msg = new ChatMessage();
+        msg.setId(1);
+        msg.setMe(false);
+        msg.setMessage("Hi. Just saw you win the Sanjit Tournament!");
+        msg.setDate(DateFormat.getDateTimeInstance().format(new Date()));
+        chatHistory.add(msg);
+        ChatMessage msg1 = new ChatMessage();
+        msg1.setId(2);
+        msg1.setMe(false);
+        msg1.setMessage("Congrats :)");
+        msg1.setDate(DateFormat.getDateTimeInstance().format(new Date()));
+        chatHistory.add(msg1);
 
 
         adapter = new ChatAdapter(ChatTestActivity5.this, new ArrayList<ChatMessage>());
