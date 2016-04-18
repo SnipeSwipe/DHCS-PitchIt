@@ -37,7 +37,6 @@
         android:layout_below="@id/imageView2"
         android:layout_toRightOf="@id/sign_in"
         android:background="#FF526EA9"
-        android:textColorHighlight="#ffffff"
-        android:onClick="signUp"/>
+        android:textColorHighlight="#ffffff" />
 
 </RelativeLayout>
