@@ -73,7 +73,7 @@ public class Profile4 extends AppCompatActivity {
     }
 
     public void chatStart(View view){
-        Intent intent = new Intent(Profile4.this, ChatTestActivity2.class);
+        Intent intent = new Intent(Profile4.this, ChatTestActivity4.class);
         startActivity(intent);
     }
 }

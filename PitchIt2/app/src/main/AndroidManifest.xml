@@ -75,7 +75,9 @@
         <activity android:name=".Profile4" />
         <activity android:name=".Profile5" />
         <activity android:name=".Profile6" />
-        <activity android:name=".Profile7"></activity>
+        <activity android:name=".Profile7" />
+        <activity android:name=".ChatTestActivity3" />
+        <activity android:name=".ChatTestActivity4"></activity>
     </application>
 
 </manifest>
