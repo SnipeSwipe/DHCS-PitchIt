@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
@@ -68,6 +69,8 @@ public class SignIn extends AppCompatActivity implements GoogleApiClient.Connect
 
         signin.setTextColor(Color.parseColor("#FFFFFF"));
         signup.setTextColor(Color.parseColor("#FFFFFF"));
+
+
 
 
         ImageView iv= (ImageView) findViewById(R.id.imageView2);
@@ -126,7 +129,7 @@ public class SignIn extends AppCompatActivity implements GoogleApiClient.Connect
         Log.d(TAG, "Signed In");
         email = Plus.AccountApi.getAccountName(mGoogleApiClient);
         Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra(SEND_EMAIL,email);
+        intent.putExtra(SEND_EMAIL, email);
         startActivity(intent);
 
     }
@@ -191,5 +194,10 @@ public class SignIn extends AppCompatActivity implements GoogleApiClient.Connect
         } else {
             Log.d(TAG, "Signed out");
         }
+    }
+
+    public void signUp(View view){
+        Intent intent = new Intent(SignIn.this, SiginUp.class);
+        startActivity(intent);
     }
 }

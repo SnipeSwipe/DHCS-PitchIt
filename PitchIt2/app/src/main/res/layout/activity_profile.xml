@@ -66,8 +66,7 @@
                     android:layout_marginLeft="108dp"
                     android:layout_below="@id/profile_photo"
                     android:background="@drawable/new_message"
-                    android:id="@+id/message"
-                    android:onClick="chatStart" />
+                    android:id="@+id/message"/>
 
                 <Button
                     android:layout_width="80dp"
@@ -78,8 +77,7 @@
                     android:layout_toRightOf="@id/message"
                     android:background="@drawable/round_button"
                     android:id="@+id/follow"
-                    android:text="Follow"
-                    android:onClick="profClick" />
+                    android:text="Follow" />
 
                 <ImageView
                     android:layout_width="30dp"
