@@ -31,7 +31,7 @@ public class ChatTestActivity extends AppCompatActivity {
         initControls();
 
         ImageView iv = (ImageView)findViewById(R.id.imageView);
-        iv.setImageResource(R.drawable.girl_prof1);
+        iv.setImageResource(R.drawable.giroud3);
     }
 
     @Override

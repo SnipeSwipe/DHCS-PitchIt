@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:text="Rupanjan"
+            android:text="Anurag Kumar"
             android:textSize="20dp"
             android:id="@+id/friendNameTV"
             android:paddingLeft="5px"
@@ -65,7 +65,7 @@
             android:layout_alignParentBottom="true"
             android:layout_toLeftOf="@+id/chatSendButton"
             android:autoText="true"
-            android:hint="Type Message..." />
+            android:hint="type message" />
 
         <Button
             android:id="@+id/chatSendButton"

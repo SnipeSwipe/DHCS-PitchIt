@@ -62,5 +62,10 @@ public class Settings extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void reStart(View view){
+        Intent intent = new Intent(Settings.this, SplashScreen.class);
+        startActivity(intent);
+    }
+
 
 }

@@ -16,7 +16,7 @@ import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class ChatTestActivity3 extends AppCompatActivity {
+public class ChatTestActivity5 extends AppCompatActivity {
 
     private EditText messageET;
     private ListView messagesContainer;
@@ -27,11 +27,11 @@ public class ChatTestActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat_test4);
+        setContentView(R.layout.activity_chat_test5);
         initControls();
 
         ImageView iv = (ImageView)findViewById(R.id.imageView);
-        iv.setImageResource(R.drawable.girl2);
+        iv.setImageResource(R.drawable.giroud5);
     }
 
     @Override
@@ -100,19 +100,9 @@ public class ChatTestActivity3 extends AppCompatActivity {
         chatHistory = new ArrayList<ChatMessage>();
 
         ChatMessage msg = new ChatMessage();
-        msg.setId(1);
-        msg.setMe(false);
-        msg.setMessage("Hey. I really liked your latest video...");
-        msg.setDate(DateFormat.getDateTimeInstance().format(new Date()));
-        chatHistory.add(msg);
-        ChatMessage msg1 = new ChatMessage();
-        msg1.setId(2);
-        msg1.setMe(true);
-        msg1.setMessage("Thanks... :D");
-        msg1.setDate(DateFormat.getDateTimeInstance().format(new Date()));
-        chatHistory.add(msg1);
 
-        adapter = new ChatAdapter(ChatTestActivity3.this, new ArrayList<ChatMessage>());
+
+        adapter = new ChatAdapter(ChatTestActivity5.this, new ArrayList<ChatMessage>());
         messagesContainer.setAdapter(adapter);
 
         for(int i=0; i<chatHistory.size(); i++) {

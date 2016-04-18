@@ -19,7 +19,7 @@ public class MessageList extends AppCompatActivity {
         setContentView(R.layout.activity_message_list);
 
         ImageView iv1 = (ImageView)findViewById(R.id.image4);
-        iv1.setImageResource(R.drawable.girl_prof1);
+        iv1.setImageResource(R.drawable.giroud3);
 
         ImageView iv2 = (ImageView)findViewById(R.id.image1);
         iv2.setImageResource(R.drawable.boy);
@@ -42,13 +42,21 @@ public class MessageList extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void boyRun(View view){
+        Intent intent = new Intent(MessageList.this, ChatTestActivity5.class);
+        startActivity(intent);
+    }
+
+    public void boyRun2(View view){
+        Intent intent = new Intent(MessageList.this, ChatTestActivity6.class);
+        startActivity(intent);
+    }
+
     public void addMessage(View view){
         Intent it= new Intent(Intent.ACTION_PICK,  ContactsContract.Contacts.CONTENT_URI);
 
         startActivityForResult(it, PICK_CONTACT);
 
-//        Intent intent = new Intent(MessageList.this, ChatTestActivity.class);
-//        startActivity(intent);
     }
 
 }
